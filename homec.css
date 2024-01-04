@@ -1,0 +1,310 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+img {
+    width: fit-content;
+    height: 19vh; /* 100% of the viewport height */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+
+.neon-button {
+    display: inline-block; 
+    padding: 9px 35px;
+    background-image: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.neon-button:hover {
+    animation: glow 1s linear infinite; /* Corrected duration to 1s */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 5px 5px 20px rgb(52, 168, 110), -5px -5px 20px rgb(93, 52, 168);
+    }
+    50% {
+        box-shadow: 5px 5px 20px rgb(9, 202, 99), -5px -5px 20px rgb(81, 224, 210);
+    }
+    100% {
+        box-shadow: 5px 5px 20px rgb(52, 168, 108), -5px -5px 20px rgb(93, 52, 168);
+    }
+}
+
+
+
+/*
+
+#imageGallery {
+    width: 80%;
+    height: 80;
+    overflow: hidden;
+}
+
+#imageGallery img {
+    width: 80%;
+    height: 80%;
+    display: inline-block;
+}
+*/
+
+
+
+
+body{
+ 
+    overflow-y: auto;
+}
+
+
+
+.mySlides {
+    width: 98%;
+    height: 98%;
+    object-fit: cover;
+   }
+   
+   .w3-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    background-color: #ddd;
+    border: none;
+    color: #555;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .w3-display-left {
+    left: 10px;
+  }
+  
+  .w3-display-right {
+    right: 10px;
+  }
+  
+  
+  /* ... (your existing CSS rules) ... */
+
+/* Dropdown menu */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* Adjust the background color for the dropdown button */
+.dropdown .neon-button {
+    background-image: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89)); /* Use the same gradient as the buttons */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white; /* Adjust the text color for better visibility */
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.dropdown-content a img {
+    width: 20px; /* Adjust the width of the Twitter logo */
+    margin-right: 10px; /* Add some space between the logo and text */
+}
+
+/* Add the shining animation to submenu items */
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust the hover background color */
+    animation: glow 1s linear infinite; /* Shining animation */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ... (remaining CSS rules) ... */
+
+
+
+.neon{
+    display: inline-block; 
+    padding: 15px 137px;
+    background-image: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.neon:hover {
+    animation: glow 1s linear infinite; /* Corrected duration to 1s */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 5px 5px 20px rgb(52, 168, 110), -5px -5px 20px rgb(93, 52, 168);
+    }
+    50% {
+        box-shadow: 5px 5px 20px rgb(9, 202, 99), -5px -5px 20px rgb(81, 224, 210);
+    }
+    100% {
+        box-shadow: 5px 5px 20px rgb(52, 168, 108), -5px -5px 20px rgb(93, 52, 168);
+    }
+}
+
+.paragraph-container {
+    background-color: #f0f0f0; /* Set your desired background color */
+    padding: 20px;
+    text-align: center;
+    max-width: 1000px; /* Set the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a subtle effect */
+    
+}
+
+.paragraph-container p {
+    color: #333; /* Set your desired text color */
+}
+
+.tagline {
+    color: #2a13d7; /* Set a different color for the tagline */
+}
+
+.paragraph-container.visible {
+    transform: translateY(0);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+
+.sides-container {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    gap: 20px; /* Add row gap between rows */
+    margin: 20px; /* Add margin as needed */
+}
+
+.template-row {
+    display: flex;
+    gap: 20px; /* Add column gap between templates */
+}
+
+.side1, .side2, .side3 {
+    flex: 1; /* Distribute available space equally among side 1, side 2, and side 3 */
+}
+
+.subhead {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subhead p {
+    color: #333;
+}
+
+.high {
+    color: #2a13d7;
+}
+
+
+
+/* Add these styles to your existing CSS */
+.side1 {
+    transform: translateX(-100%) translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.side2 {
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.side3 {
+    transform: translateX(100%) translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.template-row.visible .side1 {
+    transform: translateX(0) translateY(0);
+}
+
+.template-row.visible .side2 {
+    transform: translateY(0);
+}
+
+.template-row.visible .side3 {
+    transform: translateX(0) translateY(0);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line if there's not enough space */
+    justify-content: space-around; /* Adjust as needed: space-around, space-between, etc. */
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    overflow: hidden;
+    width: 200px; /* Adjust the width of each card as needed */
+    margin: 1px; /* Adjust the margin between cards as needed */
+  }
+  
+  .text {
+    padding: 5px;
+    text-align: center;
+  }
+  
+  a {
+    background-color: #aebbc1;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 2px;
+  }
+  
+
+  /* Existing CSS styles... */
+
+.one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* You can adjust this based on your preference */
+  }
+  
+  .two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* You can adjust this based on your preference */
+  }
+  
+
+  
+  .card {
+    position: relative; /* Ensure relative positioning for absolute positioning of the contact link */
+  }
+  
+  .contact-link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #aebbc1;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px; /* Adjust padding as needed */
+    text-align: center;
+  }
+  

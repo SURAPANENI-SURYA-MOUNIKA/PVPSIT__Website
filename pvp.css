@@ -1,0 +1,193 @@
+/*for video*/
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#myVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(10px); /* Adjust the blur intensity as needed */
+}
+/* for video ended*/
+
+/*
+body{
+    margin: 0;
+    padding: 0;
+    width: 100;
+    height: 100;
+    background: linear-gradient(to right,#fdfdfd,#ebedee 70%);
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}/*
+.text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #111; /* Very dark color 
+}
+ended welcome to pvpsit color*//*
+.text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #111; /* Very dark color */
+   /* text-shadow:
+        0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 30px rgba(255, 255, 255, 0.6),
+        0 0 40px rgba(255, 255, 255, 0.4);*/
+    /* Use multiple text-shadow layers for a stronger effect 
+}
+*/
+
+/* To remove underline 
+a {
+    text-decoration: none; /* Remove the default underline 
+    color: inherit; /* Inherit the color from the parent element 
+    cursor: pointer; /* Change the cursor to indicate it's clickable 
+}
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background-color: black;
+	height: 100vh;
+	font-family: 'Poppins' sans-serif;
+	font-size: 11vw;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+.disappear{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	height: fit-content;
+	bottom: 0;
+	top: 0;
+}
+.disappear span{
+	display: inline-block;
+	color: transparent;
+	text-shadow: 0px 0px 0px rgb(255, 255, 255);
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.disappear span:nth-child(1)
+{
+	animation-name: disappearleft;
+}
+
+
+.disappear span:nth-child(2)
+{
+	animation-name: disappearleft;
+	animation-delay: .3s;
+}
+
+.disappear span:nth-child(2)
+{
+	animation-name: disappearleft;
+	animation-delay: .3s;
+}
+
+.disappear span:nth-child(3)
+{
+	animation-name: disappearleft;
+	animation-delay: .6s;
+}
+
+.disappear span:nth-child(4)
+{
+	animation-name: disappearright;
+	animation-delay: .8s;
+}
+
+.disappear span:nth-child(5)
+{
+	animation-name: disappearright;
+	animation-delay: 1s;
+}
+
+.disappear span:nth-child(6)
+{
+	animation-name: disappearright;
+	animation-delay: 1.3s;
+}
+
+
+.disappear span:nth-child(7)
+{
+	animation-name: disappearleft;
+	animation-delay: 1.6s;
+}
+
+.disappear span:nth-child(8)
+{
+	animation-name: disappearright;
+	animation-delay: 2s;
+}
+
+.disappear span:nth-child(9)
+{
+	animation-name: disappearright;
+	animation-delay: 2.2s;
+}
+.disappear span:nth-child(10)
+{
+	animation-name: disappearright;
+	animation-delay: 2.5s;
+}
+
+
+
+@keyframes disappearleft{
+	50%{
+		transform: skew(50deg) translateY(-200%);
+		text-shadow: 0px 0px 50px;
+		opacity: 0;
+	}
+}
+
+
+@keyframes disappearright{
+	50%{
+		transform: skew(-50deg) translateY(-200%);
+		text-shadow: 0px 0px 50px;
+		opacity: 0;
+	}
+}
+
+a {
+    text-decoration: none;  
+    color: inherit; 
+    cursor: pointer; 
+}
